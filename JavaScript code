@@ -10,7 +10,7 @@ const App = () => {
   const [progress, setProgress] = useState(0);
   const [successMessage, setSuccessMessage] = useState('');
 
-  // Hardcoded API responses
+  
   const apiResponses = {
     userInformation: {
       fields: [
