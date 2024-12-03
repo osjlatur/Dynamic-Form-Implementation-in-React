@@ -1,0 +1,6 @@
+ The useEffect hook fetches form fields from the API based on user selection and updates the formFields state. The form is then rendered dynamically based on these fields.
+The handleSubmit function validates the form data, checking for required fields and data types. Error messages are displayed for invalid fields.
+ On successful validation, form data is submitted to the backend (replace the comment with actual submission logic).
+ A success message is displayed after successful submission, along with a tabular view of submitted data.
+ Consider using a CSS framework like Bootstrap or Material-UI to ensure the form is responsive across different screen sizes.
+ The code handles errors gracefully, displaying user-friendly error messages.
