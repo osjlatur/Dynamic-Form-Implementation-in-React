@@ -1,0 +1,29 @@
+import React, { useState } from "react";
+import DynamicForm from "./components/DynamicForm";
+
+function App() {
+  const [formType, setFormType] = useState("");
+  
+  const handleDropdownChange = (event) => {
+    setFormType(event.target.value);
+  };
+
+  return (
+    <div style={{ margin: "20px" }}>
+      <h1>Dynamic Form Implementation</h1>
+      <div style={{ marginBottom: "20px" }}>
+        <label htmlFor="formType">Choose Form Type: </label>
+        <select id="formType" onChange={handleDropdownChange}>
+          <option value="">Select</option>
+          <option value="userInfo">User Information</option>
+          <option value="addressInfo">Address Information</option>
+          <option value="paymentInfo">Payment Information</option>
+        </select>
+      </div>
+      {formType && <DynamicForm formType={formType} />}
+    </div>
+  );
+}
+
+export default App;
+
